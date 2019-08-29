@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+
+body {
+    @apply bg-indigo-200;
+    @apply text-blue-800;
+}
+
+h1, h2 {
+    @apply text-indigo-800;
+    @apply font-mono;
+}
+
+p {
+
+}
+.social-icon {
+    @apply w-4 h-4;
+    @apply inline-block;
+    @apply mr-3;
+    @apply text-indigo-900 fill-current;
+}
+
+p a {
+    @apply text-indigo-900;
+    @apply underline;
+}
+
+ul {
+
+}
+
+.button-list {
+
+}
+
+.button-list li {
+    @apply mb-6;
+}
+
+.button-list li a {
+    @apply block;
+    @apply flex items-center;
+    @apply bg-indigo-300;
+    @apply p-3;
+    @apply rounded;
+}
+.button-list li a:hover {
+    @apply bg-indigo-700;
+    @apply text-pink-100;
+}
+
+.button-list li a:hover .social-icon {
+
+    @apply text-indigo-100 fill-current;
+}
+
+
+
+@screen xl {
+    .button-list {
+        @apply flex flex-wrap;
+        @apply -mx-3;
+    }
+
+    .button-list li {
+        @apply w-1/2;
+        @apply px-3;
+    }
+
+}
+
+@screen md {
+    .button-list li a {
+        @apply p-2;
+    }
+}
+
+@screen lg {
+    .button-list li a {
+        @apply p-3;
+    }
+}
+
+/* purgecss start ignore */
+
+/* Add stuff here that you don't want stripping out of your CSS (stuff like classes that are added by a CMS for example)
+
+/* purgecss end ignore */
+
+@tailwind utilities;
+
